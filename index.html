@@ -6,29 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="code.css">
     <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
+    
     <title>Form</title>
 </head>
 <body>
     <div class="container-fluid fundo">
         <div class="row">
-            <div class="col-sm logo d-flex">
-                <h1>Silva.</h1>
+            <div class="col-sm-7 logo d-flex">
+                <h1>Infinity.</h1>
                 <div class="bar"></div>
             </div>
             <div class="col-sm campo_log d-flex">
                 <form method="post">
-                    <input class="email" type="email" placeholder="E-mail" onclick="cor()" autofocus required><br><br>
-                    <input class="senha" type="password" placeholder="Password" onclick="cor()" autofocus required><br><br>
-                    <input class="button" type="submit" value="Connect">
-                    <input class="button" type="submit" value="Visible">
+                    <div class="submit_line">
+                        <input class="email" type="email" placeholder="E-mail" autofocus><br><br>
+                        <button class="icon" disabled>
+                            <ion-icon name="person-outline"></ion-icon>
+                        </button>
+                    </div>
+                    <div class="submit_line">
+                        <input class="senha" type="password" placeholder="Password" autofocus><br><br>
+                        <button class="icon2" disabled>
+                            <ion-icon name="key-outline"></ion-icon>
+                        </button>
+                    </div>
+                        <button class="button">Connect</button>
+                        <button class="button" type="button" onclick="view()"><img class="imagem" src="assets/images/olho.png"></button>
                     <div class="link">
-                    <a href="">Forgot Your Password?</a>
+                            <a href="">Forgot Your Password?</a>
+                    </div>
+                    <div class="icons">
+                        <img src="assets/images/cromada.png">
+                        <img src="assets/images/instagram (1).png">
+                        <img src="assets/images/spotify.png">
                     </div>
                 </form>
             </div>
         </div>
+            <footer>
+                <p>
+                 Copywright ® 2023 All rights reserved This template he has created by João Vitor Da Silva Pinto</p>
+            </footer>
     </div>
+    
     <script src="code.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.bundle.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
